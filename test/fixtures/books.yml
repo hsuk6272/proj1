@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: 
+  author: 
+  price: 
+  pubyear: 1
+
+two:
+  title: 
+  author: 
+  price: 
+  pubyear: 1

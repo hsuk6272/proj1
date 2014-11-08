@@ -1,0 +1,22 @@
+<h>This is my current list of books</h>
+
+<table>
+	<tr>
+		<th>Title</th>
+		<th>Summary</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+
+<% @books.each do |book| %>
+	<tr>
+		<td> <%= book.title %></td>
+		<td> <%= book.author %></td>
+		<td> <%= book.price %> </td>
+		<td> <%= book.pubyear %></td>
+	</tr>
+% end %>
+</table>
+
+<%= link_to "Back to home", controller :welcome %>

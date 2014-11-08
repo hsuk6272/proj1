@@ -1,0 +1,27 @@
+<h2>I love books of all types. Feel free to drop a line below</h2>
+
+<!-- "book" plays into the submit button, e.g "Save book" -->
+<!-- need "create" view to store form submissions -->
+<%= form_for :book, url: books_path do |f| %>
+	<p>
+		<%= f.label :titlebook, "Book title" %> <br>
+		<%= f.text_field :titlebook %>
+	</p>
+
+	<p>
+		<%= f.label :author %><br>
+		<!-- use f.text_area if you want a fait text box-->
+		<%= f.text_field :text %>
+	</p>
+
+	<p>
+		<%= f.label :description %> <br>
+		<%= f.text_area :description%>
+	</p>
+
+	<p>
+		<%= f.submit %>
+	</p>
+<% end %>
+
+<h>Also, check out my current bookshelf!</h>
